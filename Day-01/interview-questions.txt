@@ -1,0 +1,31 @@
+What is semantic HTML?
+→ HTML that uses meaningful tags (<header>, <section>, <footer>) to describe content.
+
+How does CSS Flexbox differ from Grid?
+→ Flexbox = one-dimensional (row or column). Grid = two-dimensional (rows and columns).
+
+What are media queries?
+→ CSS rules that apply only on certain screen sizes or conditions.
+
+How do you make a website responsive?
+→ Use relative units like %, vh, em, rem, px( it is defined unit, not use this), flexbox/grid (will automatically adjust), media queries, and test on different devices.
+
+Explain the box model.
+→ Every element = content + padding + border + margin. (It is important to understand).
+
+What is the difference between classes and IDs in CSS?
+→ Class = reusable (use many times). ID = unique (use once).
+
+How can you optimize CSS for performance?
+→ Minify CSS, remove unused styles, use shorthand.
+
+What is the difference between relative and absolute positioning?
+→ Relative = positioned relative to itself. 
+Absolute = positioned relative to nearest positioned parent.
+
+How does the z-index property work?
+→ Controls stacking order. Higher z-index = appears above lower ones.
+
+What is the difference between padding and margin?
+→ Padding = space inside element (between content and border). 
+Margin = space outside element (between elements).

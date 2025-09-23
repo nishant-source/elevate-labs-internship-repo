@@ -1,0 +1,48 @@
+write the task 2 questions, so, I can paste them in interview-questions.txt file in Day-02 folder, yesterday you write something like that - 
+
+What is semantic HTML? → HTML that uses meaningful tags (<header>, <section>, <footer>) to describe content.  How does CSS Flexbox differ from Grid? → Flexbox = one-dimensional (row or column). Grid = two-dimensional (rows and columns).  What are media queries? → CSS rules that apply only on certain screen sizes or conditions.  How do you make a website responsive? → Use relative units like %, vh, em, rem, px( it is defined unit, not use this), flexbox/grid (will automatically adjust), media queries, and test on different devices.  Explain the box model. → Every element = content + padding + border + margin. (It is important to understand).  What is the difference between classes and IDs in CSS? → Class = reusable (use many times). ID = unique (use once).  How can you optimize CSS for performance? → Minify CSS, remove unused styles, use shorthand.  What is the difference between relative and absolute positioning? → Relative = positioned relative to itself.  Absolute = positioned relative to nearest positioned parent.  How does the z-index property work? → Controls stacking order. Higher z-index = appears above lower ones.  What is the difference between padding and margin? → Padding = space inside element (between content and border).  Margin = space outside element (between elements).
+
+
+
+
+
+
+
+in the same way, write today's question and in human language, write as easy language as possible, and one more thing write according to what answer I should give if those answers will ask to me in real interview and keep the language as easy as possible and if short answer is good for interview then keep them short and if I should go in detail for any question in real interview then go in deep for that one, got it? 
+
+here are those questions for today's task - 
+
+ Interview Questions:  Outcome: : Learn DOM manipulation, event handling, and state updates with vani la JS.  1.How do you select elements in the DOM?  2.What are event listeners?  3.Explain event delegation.  4.How do you prevent default behavior in JS?  5.What is the difference between var, let, and const?  6.How does bubbling and capturing work in events?  7.How do you add and remove classes in JS?  8.What is closure in JavaScript?  9.Explain arrow functions.  10.What is the difference between == and ===?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Daily updation full sync code (github with pc) - 
+
+git add .
+git commit -m "Daily sync"
+git pull --rebase origin main
+git push origin main

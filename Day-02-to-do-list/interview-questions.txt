@@ -1,0 +1,60 @@
+1. How do you select elements in the DOM?  
+→ Use methods like:  
+   - document.getElementById("id") → select by ID  
+   - document.getElementsByClassName("class") → select by class  
+   - document.querySelector(".class or #id") → first match  
+   - document.querySelectorAll("tag/class") → all matches  
+
+2. What are event listeners?  
+→ Event listeners are functions that run when something happens (like a click, keypress, or hover).  
+Example: button.addEventListener("click", myFunction).  
+
+3. Explain event delegation.  (important and revise again)
+→ Instead of putting event listeners on every child element, we put one listener on the parent and use `event.target` to figure out which child was clicked.  
+This is efficient because we don’t need many listeners.  
+
+4. How do you prevent default behavior in JS?  
+→ Use event.preventDefault().  
+Example: stopping a form from reloading the page when pressing submit.  
+
+5. What is the difference between var, let, and const?  
+→ var = old way, function-scoped, can be redeclared.  
+→ let = block-scoped, can be changed, but not redeclared in same scope.  
+→ const = block-scoped, cannot be reassigned (but objects/arrays inside can still change).  
+
+6. How does bubbling and capturing work in events?  
+→ Bubbling: Event starts from the innermost element and goes up (child → parent).  
+→ Capturing: Event goes from parent → child before reaching the target.  
+By default, JS uses bubbling. We can choose capturing by passing `{capture: true}`.  
+
+7. How do you add and remove classes in JS?  
+→ Use element.classList:  
+   - element.classList.add("className")  
+   - element.classList.remove("className")  
+   - element.classList.toggle("className")   //This is a good one and I also use in this to-do list website
+
+8. What is closure in JavaScript?  
+→ A closure is when a function remembers variables from the place where it was created, even if it’s run later in another scope. 
+Example:  
+function outer() {
+let count = 0;
+return function inner() {
+count++;
+return count;
+}
+}
+let counter = outer();
+counter(); // remembers count
+Closures are useful for data privacy and counters.  
+
+9. Explain arrow functions.  
+→ A shorter way to write functions.  
+Example: `const add = (a, b) => a + b;`  
+Main difference: arrow functions don’t have their own `this`, they use the `this` from the surrounding scope.  
+
+10. What is the difference between == and ===?  
+→ `==` → compares values only  
+   Example: "5" == 5 → true  
+→ `===` → compares values + types (strict check).  
+   Example: "5" === 5 → false  
+Always prefer `===` to avoid confusion.  

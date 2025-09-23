@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h1>My To-Do List</h1>
+      <div class="flex">
+        <input type="text" id="myInput" placeholder="Enter task here..." />
+        <button class="addBtn">Add</button>
+      </div>
+    </div>
+
+    <ul id="myUL">
+      <!-- already pressent to-do tasks and js will add more by add btn -->
+      <li class="checked">Go for running! <span class="close">×</span></li>
+      <li>Hit the gym <span class="close">×</span></li>
+      <li>Drink 3L water <span class="close">×</span></li>
+    </ul>
+    <script src="script.js"></script>
+  </body>
+</html>

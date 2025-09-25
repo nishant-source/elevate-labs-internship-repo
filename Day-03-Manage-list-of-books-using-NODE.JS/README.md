@@ -4,7 +4,7 @@ Simple in-memory REST API for books. No database used — data resets when serve
 
 ## Run locally
 
-1. cd Day-03
+1. cd Day-03-Manage-list-of-books-using-NODE.JS
 2. npm install
 3. npm start
 

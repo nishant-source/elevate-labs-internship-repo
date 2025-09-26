@@ -52,16 +52,16 @@
 
 ## 📂 Project Structure
 Day-04-Responsive-Website/
-│── index.html
-│── style.css
-│── script.js
+- │── index.html
+- │── style.css
+- │── script.js
 💻 Code Overview
 🔹 Navbar & Hamburger Menu
-Navbar shows inline links on desktop.
+- Navbar shows inline links on desktop.
 
-On mobile (max-width: 600px), menu collapses into a hamburger icon.
+- On mobile (max-width: 600px), menu collapses into a hamburger icon.
 
-JavaScript toggles the nav with .active class.
+- JavaScript toggles the nav with .active class.
 
 🔹 Hero Section
 - Full-screen hero image.
@@ -77,15 +77,15 @@ JavaScript toggles the nav with .active class.
 
 ## 📱 Responsive Design Demo
 Desktop View
-✅ Horizontal navbar
-✅ Full-screen hero image
-✅ Centered text section
+--  ✅ Horizontal navbar
+--  ✅ Full-screen hero image
+- - ✅ Centered text section
 
 ## Tablet / Mobile View
-✅ Hamburger menu toggle
-✅ Images scale properly
-✅ Fonts shrink dynamically
-✅ Layout stacks vertically
+- - ✅ Hamburger menu toggle
+- - ✅ Images scale properly
+- - ✅ Fonts shrink dynamically
+- - ✅ Layout stacks vertically
 
 ## 🚀 How to Run
 - Clone the repo or download files.

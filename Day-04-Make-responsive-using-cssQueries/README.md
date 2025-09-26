@@ -1,4 +1,4 @@
-🛠 Tools Used
+# 🛠 Tools Used
 - HTML5
 
 - CSS3 (Flexbox, Media Queries)
@@ -9,14 +9,14 @@
 
 - Chrome DevTools (Device Toolbar)
 
-📌 Project Requirements
+##  📌 Project Requirements
 - Open an existing HTML page in VS Code.
 
 - Identify fixed-width elements or large images that break on small screens.
 
 - Add media queries targeting max-width: 768px (tablet) and max-width: 600px (mobile).
 
-Adjust layout:
+## Adjust layout:
 
 - Stack columns vertically.
 
@@ -30,7 +30,7 @@ Adjust layout:
 
 - Ensure images scale within containers.
 
-✅ Outcome
+## Outcome
 - Website works smoothly on desktop, tablet, and mobile.
 
 - Learned mobile-first design principles.
@@ -39,7 +39,7 @@ Adjust layout:
 
 - Improved navbar with hamburger toggle menu on mobile.
 
-🔑 Key Concepts Practiced
+##  Key Concepts Practiced
 - Media Queries (@media (max-width: ...))
 
 - Responsive Web Design
@@ -75,26 +75,26 @@ JavaScript toggles the nav with .active class.
 
 - Uses flexbox for vertical centering.
 
-📱 Responsive Design Demo
+## 📱 Responsive Design Demo
 Desktop View
 ✅ Horizontal navbar
 ✅ Full-screen hero image
 ✅ Centered text section
 
-Tablet / Mobile View
+## Tablet / Mobile View
 ✅ Hamburger menu toggle
 ✅ Images scale properly
 ✅ Fonts shrink dynamically
 ✅ Layout stacks vertically
 
-🚀 How to Run
+## 🚀 How to Run
 - Clone the repo or download files.
 
 - Open index.html in a browser.
 
 - Use Chrome DevTools (Ctrl+Shift+I → Toggle Device Toolbar) to test mobile view.
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 - Smooth slide-in animation for navbar.
 
 - Dark/Light mode toggle.

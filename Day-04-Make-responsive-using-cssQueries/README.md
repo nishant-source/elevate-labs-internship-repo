@@ -50,7 +50,7 @@
 
 - Flexbox for layout
 
-📂 Project Structure
+## 📂 Project Structure
 Day-04-Responsive-Website/
 │── index.html
 │── style.css

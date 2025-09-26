@@ -1,0 +1,103 @@
+1. What is REST? (Deep)
+REST (Representational State Transfer) is an architectural style for designing APIs.
+
+Uses HTTP methods (GET, POST, PUT, DELETE) to perform CRUD operations.
+
+Each resource (like /books) is identified by a URL.
+
+Communication happens with stateless requests (server doesn’t remember previous calls).
+
+Data is usually exchanged in JSON format.
+
+👉 Example:
+
+GET /books → fetch all books
+
+POST /books → add a book
+
+PUT /books/:id → update a book
+
+DELETE /books/:id → remove a book
+
+Why learn deeply? → REST is the backbone of most modern APIs.
+
+2. What are HTTP methods and their use?
+GET → Read data
+
+POST → Create new data
+
+PUT → Update existing data (replace)
+
+PATCH → Partial update
+
+DELETE → Remove data
+
+3. How do you handle routes in Express?
+Use app.METHOD(PATH, HANDLER)
+
+👉 Example:
+
+app.get("/books", (req, res) => { ... });
+app.post("/books", (req, res) => { ... });
+For organization, routes can also be moved into separate files using express.Router().
+
+4. What is middleware in Express? (Deep)
+Middleware = functions that run before your request reaches the final route handler.
+
+Used for logging, authentication, error handling, parsing request bodies, etc.
+
+Runs in order: app.use() → route → error handler.
+
+👉 Example:
+
+app.use(express.json()); // built-in middleware
+Important to learn deeply → every serious Express app relies heavily on middleware.
+
+5. How do you parse JSON in Express?
+Use built-in middleware:
+
+app.use(express.json());
+This automatically parses JSON from the request body and makes it available as req.body.
+
+6. What status codes do you use for CRUD?
+200 OK → successful GET/PUT/DELETE
+
+201 Created → after POST
+
+400 Bad Request → invalid input
+
+404 Not Found → resource doesn’t exist
+
+500 Internal Server Error → server crash
+
+7. How would you handle errors in Express? (Deep)
+Use a try/catch inside route handlers.
+
+Or create an error-handling middleware (special middleware with 4 args).
+
+👉 Example:
+
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: "Something went wrong!" });
+});
+Why deep? Because error handling = critical for real-world APIs.
+
+8. What is CORS?
+CORS (Cross-Origin Resource Sharing) controls which domains can access your API.
+By default, browsers block requests from different origins.
+In Express, use the cors package:
+
+const cors = require("cors");
+app.use(cors());
+9. Explain request and response objects in Express.
+req (request): contains data about the incoming request → req.params, req.query, req.body.
+
+res (response): used to send data back → res.json(), res.send(), res.status().
+
+10. How do you test API endpoints?
+Postman (most popular) → send requests, check responses.
+
+cURL in terminal.
+
+Browser for GET requests only.

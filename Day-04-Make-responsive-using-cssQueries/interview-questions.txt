@@ -1,0 +1,102 @@
+1. What are media queries?
+Media queries let you apply CSS styles only when certain conditions are true (like screen width, device type, orientation). They’re the core of responsive design.
+
+👉 Example:
+
+@media (max-width: 768px) {
+  body { font-size: 14px; }
+}
+2. Explain mobile-first vs desktop-first CSS design.
+Mobile-first: Start with styles for small screens, then add media queries for larger ones using min-width.
+
+Desktop-first: Start with desktop styles, then adjust for smaller screens using max-width.
+
+👉 In real-world projects, mobile-first is more common because most traffic is mobile.
+
+3. How do you test responsiveness?
+Resize the browser manually
+
+Use Chrome DevTools → Toggle Device Toolbar
+
+Test on actual devices if possible
+
+(Overview answer is enough here ✅)
+
+4. What units are best for responsive layouts?
+% → for flexible widths
+
+rem/em → for font sizes (scales with root or parent font-size)
+
+vw/vh → relative to viewport
+
+Avoid fixed px unless absolutely necessary
+
+5. What is viewport meta tag? (Deep)
+This is very important, learn it in depth:
+The viewport meta tag tells the browser how to scale and render the page on mobile devices.
+
+👉 Example:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width → match screen width
+
+initial-scale=1.0 → zoom level
+Without this, mobile devices often zoom out to show the “desktop” layout, breaking responsiveness.
+
+6. How does flexbox help in responsive design? (Deep)
+Flexbox is super important, worth learning deeply:
+
+Automatically adjusts element sizes inside a container.
+
+Makes it easy to align, distribute, and reorder items.
+
+With properties like flex-wrap, justify-content, and align-items, layouts can stack or stretch without media queries.
+
+👉 Example:
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  flex: 1 1 200px; /* grow, shrink, basis */
+}
+This means items will shrink, grow, or wrap based on space → responsiveness almost for free.
+
+7. Difference between absolute and relative units?
+Absolute units: fixed (px, in, cm) → don’t change with screen size
+
+Relative units: scale with something else (%, em, rem, vw, vh) → better for responsive layouts
+
+8. How to handle images in responsive design?
+Use max-width: 100%; height: auto; → scales image within container
+
+Use modern formats (WebP) to save size
+
+For advanced: srcset or picture element for different resolutions
+
+9. What is adaptive vs responsive design?
+Responsive: One flexible layout that adapts to all screens (fluid + media queries).
+
+Adaptive: Multiple fixed layouts for specific breakpoints (e.g., separate design for mobile, tablet, desktop).
+
+👉 Most modern sites = responsive, not adaptive.
+
+10. Explain CSS grid responsiveness. (Deep)
+CSS Grid is another must-learn deeply tool:
+
+Lets you create two-dimensional layouts (rows + columns).
+
+Combine with fr units and minmax() for responsive grids.
+
+You can make grids that auto-adjust without media queries.
+
+👉 Example:
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+Here, the grid automatically fits as many 200px columns as possible, resizing fluidly.
+

@@ -56,29 +56,29 @@ Day-04-Responsive-Website/
 - │── style.css
 - │── script.js
 💻 Code Overview
-🔹 Navbar & Hamburger Menu
-- Navbar shows inline links on desktop.
+- 🔹 Navbar & Hamburger Menu
+ Navbar shows inline links on desktop.
 
-- On mobile (max-width: 600px), menu collapses into a hamburger icon.
+ On mobile (max-width: 600px), menu collapses into a hamburger icon.
 
-- JavaScript toggles the nav with .active class.
+ JavaScript toggles the nav with .active class.
 
-🔹 Hero Section
-- Full-screen hero image.
+- 🔹 Hero Section
+- - Full-screen hero image.
 
-- Uses object-fit: contain on desktop.
+- - Uses object-fit: contain on desktop.
 
-- Switches to object-fit: cover on mobile for better fit.
+- - Switches to object-fit: cover on mobile for better fit.
 
-🔹 Text Section
-- Responsive font sizes (h1, h2, h3, h4) adapt with media queries.
+- 🔹 Text Section
+- - Responsive font sizes (h1, h2, h3, h4) adapt with media queries.
 
-- Uses flexbox for vertical centering.
+- - Uses flexbox for vertical centering.
 
 ## 📱 Responsive Design Demo
 Desktop View
---  ✅ Horizontal navbar
---  ✅ Full-screen hero image
+- - ✅ Horizontal navbar
+- - ✅ Full-screen hero image
 - - ✅ Centered text section
 
 ## Tablet / Mobile View

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* submit form main div */
+.form {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 70vw;
+  margin: 0 auto;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+.form h1 {
+  color: #0ef;
+  font-size: 3em;
+  text-align: center;
+}
+.form p {
+  margin: 0 0 10px 0;
+}
+form {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */ /*making the labels center also*/
+  text-align: left;
+  flex-direction: column;
+  background-color: rgb(217, 249, 241);
+  padding: 20px;
+  min-width: 40vw;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8), -5px -5px 10px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(5px 5px 0px rgba(124, 136, 133, 0.5));
+  margin: 0 auto;
+}
+form input,
+form textarea {
+  background-color: black;
+  padding: 10px 12px;
+  width: 100%;
+  color: #0ef;
+  font-size: 1em;
+  margin: 0 0 10px 0;
+  border: 1px solid #e6eef0;
+  max-width: 100%;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0ef;
+  box-shadow: 0 0 0 4px rgba(14, 165, 164, 0.08);
+}
+
+form label {
+  color: black;
+  margin: 10px 0 0 0;
+}
+
+label span {
+  color: red;
+}
+
+#submitBtn {
+  background-color: #0a8282;
+  color: black;
+  width: 100%;
+  padding: 1em;
+  font-size: 1em;
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: black;
+  color: #0ef;
+  cursor: pointer;
+}
+
+#error-msg {
+  display: none;
+  color: red;
+  margin: 20px auto 0 auto;
+  font-weight: 500;
+}
+
+#submit-msg {
+  display: none;
+  color: green;
+  margin: 20px auto 0 auto;
+  font-weight: 500;
+}
+
+/* responsiveness */
+@media (max-width: 750px) {
+  .form {
+    width: 80vw;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .form {
+    width: 100vw;
+  }
+  form {
+    width: 100%;
+  }
+  .form p {
+    font-size: 0.8em;
+  }
+}

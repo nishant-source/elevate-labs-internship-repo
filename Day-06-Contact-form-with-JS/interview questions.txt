@@ -1,0 +1,41 @@
+1. How to validate form inputs in JavaScript?
+👉 By checking the values of input fields with JavaScript. For example, using if (input.value.trim() === "") to see if it’s empty, or using regex to test email.
+
+2. What is event.preventDefault()?
+👉 It stops the browser’s default behavior. For example, forms usually reload the page when submitted. preventDefault() stops that so we can handle validation first.
+
+3. How to check email format with regex?
+👉 Use a regex pattern like:
+
+/^[^\s@]+@[^\s@]+\.[^\s@]+$/
+This checks that the email has text before @, then a domain, and then .com or similar.
+
+4. Difference between client-side and server-side validation?
+👉 Client-side runs in the browser with JavaScript, gives instant feedback.
+👉 Server-side runs on the server after submission, more secure and final.
+👉 Best practice: use both.
+
+5. How to show error messages dynamically?
+👉 By changing the HTML content with JavaScript. Example:
+
+document.getElementById("error-msg").innerHTML = "Name is required";
+document.getElementById("error-msg").style.display = "block";
+6. What is form submission?
+👉 When you click submit, the data inside the form is sent (usually to a server). In this project, we just show messages, but normally it sends data using HTTP.
+
+7. How to improve form accessibility?
+👉 Use <label for="id"> for each input, use placeholders carefully, add clear error messages, and allow keyboard navigation.
+
+8. How to handle form reset?
+👉 Use form.reset() in JavaScript to clear all fields after a successful submission.
+
+9. What are common security issues with forms?
+👉 - SQL injection (if input is not checked on server).
+👉 - XSS (Cross-Site Scripting).
+👉 - Fake/invalid data.
+👉 That’s why server-side validation is always needed.
+
+10. How does HTML5 built-in validation differ from JS validation?
+👉 HTML5 gives simple validation using attributes like required or type="email".
+👉 JavaScript validation is more flexible — you can write your own rules and show custom error messages.
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form with Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Contact Us</h1>
+      <p class="lead">Have a question or feedback? Send us a message.</p>
+
+      <!-- making the form submittable forcefully -->
+      <!-- <form action="/submit.php" method="post"> -->
+      <form>
+        <label for="name">Name:<span>*</span> </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+
+        <label for="email">Email:<span>*</span></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+
+        <label for="message">Message:<span>*</span> </label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter your message"
+        ></textarea>
+
+        <button id="submitBtn">Submit</button>
+
+        <span id="error-msg">Message should not be empty</span>
+        <span id="submit-msg">Form Submit successfully</span>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

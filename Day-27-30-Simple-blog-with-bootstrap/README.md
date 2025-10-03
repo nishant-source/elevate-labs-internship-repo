@@ -24,11 +24,11 @@
 
 📂 Project Structure
 Day-08/
-│── index.html        # Blog layout with Bootstrap
-│── style.css         # Small custom styles
-│── script.js         # (Optional, for future interactivity)
-│── README.md         # Project documentation
-│── task-8.pdf        # Internship task file
+│── index.html,
+│── style.css,
+│── script.js,
+│── README.md,
+│── task-8.pdf
 
 💻 Code Overview
 **HTML**  
